@@ -4,54 +4,71 @@
     background-color: rgb(39,39,39);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-li, a, button {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: azure;
-    text-decoration: none;
 }
 
 header {
+    position: relative;
     display: flex;
-    align-items: center;
-    padding: 30px 10%;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 90px;
+    border-style: groove;
+    border-radius: 1px;
+    border-color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
-.logo {
-    cursor: pointer;
-}
-
-.nav_links {
-    list-style: none;
-    margin-right: auto;
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav_links li a {
-    transition: all 0.3 ease 0s;
-}
-
-.nav_links li a:hover {
-    color: rgba(121,245,121,0.6);
+.header_logo {
+    position: absolute;
+    left: 50%; /* Move to the horizontal center */
+    transform: translateX(-50%); /* Adjust to center precisely */
+    margin-top: 5px;
 }
 
 button {
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
+    display: inline-block;
+    outline: none;
     cursor: pointer;
-    transition: all 0.3 ease 0s;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: 0.3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: rgba(255,255,255,0.7);
+    background-color: #15883e;
+    height: 48px;
+    margin: 18px 28px 18px 0;
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+    background-color: #1db954;
+    color: rgba(255,255,255,1);
+}
+
+nav a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    margin: 30px 25px;
+    display: inline-block;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: 0.3s;
+}
+nav a:hover {
+    color: rgba(255,255,255,1);
 }
