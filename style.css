@@ -1,1 +1,8 @@
-
+div.header {
+    background-color: black;
+}
+body {
+    background-color: rgb(39,39,39);
+    margin: 0;
+    padding: 0;
+}
