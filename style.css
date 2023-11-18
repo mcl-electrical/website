@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 div.header {
     background-color: black;
     height: 100px;
@@ -6,4 +7,8 @@ body {
     background-color: rgb(39,39,39);
     margin: 0;
     padding: 0;
+}
+h1.title {
+    color: azure;
+    font-family: 'Open Sans', sans-serif;
 }
